@@ -26,6 +26,9 @@ const fetchData = () => {
 
 // Animation Timeline
 const animationTimeline = () => {
+
+  const song = document.getElementsByClassName("song")[0]
+  song.play();
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
@@ -221,8 +224,8 @@ const animationTimeline = () => {
       "-=2"
     )
     .from(".hat", 0.5, {
-      x: -100,
-      y: 350,
+      x: 0,
+      y: 0,
       rotation: -180,
       opacity: 0
     })
